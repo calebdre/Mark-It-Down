@@ -37,7 +37,7 @@ file { '/var/www/':
 #############
 ### Choose a type of project (laravel)
 #############
-$project = ""
+$project = "laravel"
 ############
 ###########
 include nginx, php55, composer#, ruby, nodejs, mysql

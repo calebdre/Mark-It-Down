@@ -1,0 +1,31 @@
+<div class="finder-container container-fluid" ng-controller="NotesManagerController">
+	<div class="row">
+		<!-- Subject -->
+		<div class="finder-tab-container col-md-4">
+			<div class="list-group" ng-repeat="subject in subjects">
+				<a href="#" class="list-group-item">{{subject}}</a>
+			</div>
+			<div class="list-group">
+				<a href="" class="list-group-item" ng-click="launchSubjectCreation()">New subejct</a>
+			</div>
+		</div>
+		
+		<!-- Notes by subject w/ date modified -->
+		<div class="finder-tab-container col-md-4">
+			<div class="list-group" ng-if="notes" ng-repeat="note in notes">
+				<a href="/note/{{note.id}}" class="list-group-item">{{note.name}}</a>
+			</div>
+			<div class="list-group">
+				<a href="" class="list-group-item" ng-click="launchNoteCreation()">New note</a>
+			</div>
+		</div>
+		
+		<!-- Help messages & options -->
+		<div class="finder-tab-container col-md-4">
+			<div class="list-group">
+				<a class="list-group-item">Help messages</a>
+			</div>
+			
+		</div>
+	</div>
+</div>

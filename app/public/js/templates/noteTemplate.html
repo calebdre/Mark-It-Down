@@ -1,0 +1,28 @@
+<div ng-controller="NotesController">
+	<div class="clearfix">
+		<div id="editor" class="left-side" full-height ng-model="input"></div>
+		<div class="right-side">
+				<div class="markdown-body" ng-bind-html="output"></div>
+		</div>
+	</div>
+	<div class="util-options-container clearfix">
+		<div class="util-option"  opaque-on-hover> 
+			<a class="tip" tool-tip data-tip="Next page" href="/notes/new"><i class="fa fa-long-arrow-left"></i></a>
+		</div>
+		<div class="util-option"  opaque-on-hover> 
+			<a class="tip" tool-tip data-tip="New page" href="/notes/new"><i class="fa fa-plus"></i></a>
+		</div>
+		<div  ng-click="saveNote()" class="util-option" opaque-on-hover> 
+			<i tool-tip data-tip="Save"  class="tip fa fa-save"></i>
+		</div>
+		<div class="util-option"  ng-click="scrapNote()" opaque-on-hover> 
+			<i tool-tip data-tip="Scrap"  class="tip fa fa-trash"></i>
+		</div>
+		<div class="util-option"  opaque-on-hover> 
+			<a  href="/notes/"><i tool-tip data-tip="All notes" class="tip fa fa-list-alt"></i></a>
+		</div>
+		<div class="util-option"  opaque-on-hover> 
+			<a class="tip" tool-tip data-tip="Previous page" href="/notes/"><i class="fa fa-long-arrow-right"></i></a>
+		</div>
+	</div>
+</div>
