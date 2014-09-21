@@ -6,7 +6,7 @@
 				<a href="#" class="list-group-item">{{subject}}</a>
 			</div>
 			<div class="list-group">
-				<a href="" class="list-group-item" ng-click="launchSubjectCreation()">New subejct</a>
+				<a href="" class="list-group-item list-group-item-info" ng-click="launchSubjectCreation()" data-animation="am-fade-and-slide-top" data-template="/js/templates/modal.html" bs-modal="modal">New subejct</a>
 			</div>
 		</div>
 		
@@ -16,7 +16,7 @@
 				<a href="/note/{{note.id}}" class="list-group-item">{{note.name}}</a>
 			</div>
 			<div class="list-group">
-				<a href="" class="list-group-item" ng-click="launchNoteCreation()">New note</a>
+				<a href="" class="list-group-item list-group-item-info" ng-click="launchNoteCreation()">New note</a>
 			</div>
 		</div>
 		
